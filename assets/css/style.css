@@ -20,21 +20,16 @@ body{
 /* region utilies */
 
 .container{
-    
     max-width: 580px;
-    width: 90%;
+    width: 100%;
     padding: 2rem;
     margin: auto;
 }
 .row{
-
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
-.col{
-    width: 90%;
-}
+
 
 /* endregion utilies */
 
@@ -81,12 +76,19 @@ body{
 /* region main */
 
 /* section demo application */
+.col-8 .card{
+    text-align: start;
+}
 .card{
     background-color: var(--responsive-layout-background-card);
     padding: 1rem 2rem 0;
     border-radius: 1rem;
     font-weight: 500;
     text-align: center;
+    margin: 0 5px 20px;
+}
+.card-sm{
+    padding: 2rem;
 }
 .card > *{
     padding: 20px 0;
@@ -112,11 +114,174 @@ body{
     width: 100%;
     margin-bottom: -5px;
 }
+.card > i{
+    font-size: 90px;
+    padding: 0;
+    color: var(--responsive-layout-primary);
+}
 /* endsection demo application */
+
+/* section strategic planning */
+#strategic-planning{
+    background-color: var(--responsive-layout-secondary);
+    color: var(--responsive-layout-lighter);
+    font-weight: 500;
+    padding: 30px 0;
+}
+.left-strategic-planning > *{
+    padding: 20px 0;
+}
+.left-strategic-planning > img{
+    width: 100%;
+}
+.left-strategic-planning > h2{
+    font-size: 30px;
+}
+.right-strategic-planning{
+    background-color: var(--responsive-layout-lighter);
+    color: var(--responsive-layout-dark);
+    text-align: center;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+.right-strategic-planning > *{
+    padding: 20px 0;
+}
+.right-strategic-planning > img{
+    width: 100%;
+}
+#jump-to{
+    display: inline-block;
+    border-radius: 50%;
+    padding: 10px 15px;
+    background-color: var(--responsive-layout-secondary);
+}
+#jump-to > a {
+    color: var(--responsive-layout-dark);
+}
+/* endsection strategic planning */
+
+/* section testimonial */
+#testimonials{
+    text-align: center;
+    padding: 50px 0;
+}
+#testimonials > .container > h2{
+    color: var(--responsive-layout-secondary);
+    font-size: 35px;
+}
+#testimonials > .container > *{
+    padding: 25px 0;
+}
+.card-testimonial{
+    color: var(--responsive-layout-lighter);
+    text-align: center;
+    background-color: var(--responsive-layout-secondary);
+    width: 80%;
+    margin: 0 auto 30px;
+    padding: 1rem;
+    border-radius: 2rem;
+    
+}
+.img-testimonial > img{
+    width: 100%;
+    border-radius: 100%;
+}
+.info-testimonial{
+    text-align: center;
+}
+/* endsection testimonial */
+
+/* section benefits */
+#benefits{
+    background-color: var(--responsive-layout-secondary);
+    padding-top: 50px;
+    text-align: center;
+}
+#benefits > .container > h2{
+    font-size: 35px;
+    color: var(--responsive-layout-lighter);
+    padding-bottom: 50px;
+}
+.card-benefits{
+    margin-bottom: 30px;
+    text-align: start;
+    background-color: var(--responsive-layout-lighter);
+    color: var(--responsive-layout-secondary);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.card-benefits > h1{
+    font-size: 50px;
+}
+.card-benefits > *{
+    padding: 10px 0;
+}
+.more{
+    margin: 20px 0;
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 0.5rem 4rem;
+    background-color: var(--responsive-layout-secondary);
+}
+.more > a{
+    text-decoration: none;
+    color: var(--responsive-layout-lighter);
+}
+/* endsection benefits */
+
+/* section about us */
+#about-us{
+    padding: 60px 0;
+}
+#about-us > .container > h2{
+    color: var(--responsive-layout-secondary);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.about-us-image{
+    margin-top: 60px;
+    position: relative;
+}
+.about-us-image > img{
+    width: 50%;
+    border-radius: 50%;
+}
+.about-us-image >i{
+    font-size: 60px;
+    position: absolute;
+    top:0;
+    left:40%;
+    color: var(--responsive-layout-secondary);
+}
+/* endsection about us */
 
 
 /* endregion main */
 
+/* region media query 768px */
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 950px;
+        width: 100%;
+    }
+    .col-8{
+        width: calc((100% / 12) * 8);
+    }
+    .col-4{
+        width: calc((100% / 12) * 4);
+    }
+    .image-card{
+        width: 300px;
+    }
+}
+/* endregion media query 768px */
+
+/* region media query 992px */
+@media screen and (min-width: 992px){
+    
+}
+/* endregion media query 992px */
 
 /* region media query 1200px  */
 @media screen and (min-width: 1200px) {
