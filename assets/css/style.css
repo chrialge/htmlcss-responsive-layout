@@ -20,7 +20,20 @@ body{
 /* region utilies */
 
 .container{
-    padding: 1rem;
+    
+    max-width: 580px;
+    width: 90%;
+    padding: 2rem;
+    margin: auto;
+}
+.row{
+
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 90%;
 }
 
 /* endregion utilies */
@@ -30,16 +43,16 @@ body{
 
 #site-header{
     background-color: var(--responsive-layout-primary);
+    width: 100%;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.main-menu{
+.main-menu > a{
     color: var(--responsive-layout-lighter);
-    font-size: 25px;
-    display: flex;
+    font-size: 25px; 
 }
 .siderbar{
     display: none;
@@ -65,7 +78,47 @@ body{
 }
 /* endregion header */
 
-/* region media query  */
+/* region main */
+
+/* section demo application */
+.card{
+    background-color: var(--responsive-layout-background-card);
+    padding: 1rem 2rem 0;
+    border-radius: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.card > *{
+    padding: 20px 0;
+}
+.card > h2{
+    color: var(--responsive-layout-primary);
+}
+.btn >a{
+    padding: 0.5rem 4rem;
+    text-decoration: none;
+    border-radius: 2rem;
+    color: var(--responsive-layout-lighter);
+    background-color: var(--responsive-layout-primary);
+}
+.btn > a > i{
+    padding-right: 5px;
+}
+.image-card{
+    width: 100%;
+    padding: 0;
+}
+.image-card > img{
+    width: 100%;
+    margin-bottom: -5px;
+}
+/* endsection demo application */
+
+
+/* endregion main */
+
+
+/* region media query 1200px  */
 @media screen and (min-width: 1200px) {
     .siderbar{
         display: block;
@@ -74,3 +127,4 @@ body{
         display: none;
     }
 }
+/* endregion media query 1200px  */
