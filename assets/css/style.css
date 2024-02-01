@@ -1,0 +1,76 @@
+/* region common */
+:root{
+    --responsive-layout-primary: #0084fd;
+    --responsive-layout-secondary: #9792e4;
+    --responsive-layout-dark: #333333;
+    --responsive-layout-lighter: #ffffff;
+    --responsive-layout-background-card: #b5ddff;
+    --responsive-layout-free: #fdc15f;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* endregion common */
+
+/* region utilies */
+
+.container{
+    padding: 1rem;
+}
+
+/* endregion utilies */
+
+
+/* region header */
+
+#site-header{
+    background-color: var(--responsive-layout-primary);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-menu{
+    color: var(--responsive-layout-lighter);
+    font-size: 25px;
+    display: flex;
+}
+.siderbar{
+    display: none;
+}
+.siderbar > ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.siderbar > ul>li:nth-last-child(1){
+    color: var(--responsive-layout-dark);
+    padding: 0.5rem 1rem;
+    background-color: var(--responsive-layout-lighter);
+    border-radius: 3rem;
+}
+.siderbar > ul > li > a{
+    text-decoration: none;
+    color: var(--responsive-layout-lighter);
+}
+#btn-header{
+    color: var(--responsive-layout-dark);
+}
+/* endregion header */
+
+/* region media query  */
+@media screen and (min-width: 1200px) {
+    .siderbar{
+        display: block;
+    }
+    .main-menu{
+        display: none;
+    }
+}
