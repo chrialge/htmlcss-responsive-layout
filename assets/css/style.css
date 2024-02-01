@@ -18,7 +18,12 @@ body{
 /* endregion common */
 
 /* region utilies */
-
+.container-sm{
+    max-width: 520px;
+    width: 100%;
+    padding: 2rem;
+    margin: auto;
+}
 .container{
     max-width: 580px;
     width: 100%;
@@ -28,9 +33,8 @@ body{
 .row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
-
-
 /* endregion utilies */
 
 
@@ -128,13 +132,13 @@ body{
     font-weight: 500;
     padding: 30px 0;
 }
-.left-strategic-planning > *{
+.info-strategic > *{
     padding: 20px 0;
 }
 .left-strategic-planning > img{
     width: 100%;
 }
-.left-strategic-planning > h2{
+.info-strategic > h2{
     font-size: 30px;
 }
 .right-strategic-planning{
@@ -234,7 +238,7 @@ body{
 #about-us{
     padding: 60px 0;
 }
-#about-us > .container > h2{
+.about-title > h2{
     color: var(--responsive-layout-secondary);
     font-size: 50px;
     margin-bottom: 20px;
@@ -254,15 +258,78 @@ body{
     left:40%;
     color: var(--responsive-layout-secondary);
 }
+.about-us-info > h2{
+    color: var(--responsive-layout-secondary);
+    padding: 20px 0;
+}
+.likedin-about{
+    display: inline-block;
+    background-color: var(--responsive-layout-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    color: var(--responsive-layout-lighter);
+}
 /* endsection about us */
 
+/* section get started */
+#get-started{
+    background-color: var(--responsive-layout-secondary);
+    text-align: center;
+    padding: 50px 0;
+    color: var(--responsive-layout-lighter);
+}
+.col-started > *{
+    margin: 20px 0;
+}
+.col-started :nth-last-child(5){
+    font-size: 30px;
+}
+.col-started :nth-last-child(4){
+    font-size: 60px;
+    color: var(--responsive-layout-free);
+}
+.col-started :nth-last-child(2){
+    display: inline-block;
+    background-color: var(--responsive-layout-lighter);
+    padding: 1.5rem 5rem;
+    border-radius: 3rem;
+}
+.col-started :nth-last-child(2) > a{
+    color: var(--responsive-layout-secondary);
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+} 
+.col-started :nth-last-child(1) > span > a{
+    color: var(--responsive-layout-lighter);
+}
+/* endsection get started */
 
 /* endregion main */
+
+
+/* region footer */
+#site-footer{
+    background-color: var(--responsive-layout-dark);
+    text-align: center;
+    padding: 30px;
+    color: var(--responsive-layout-lighter);
+}
+#site-footer > .container > p{
+    margin-bottom: 70px;
+}
+/* endregion footer */
+
+
+
 
 /* region media query 768px */
 @media screen and (min-width: 768px){
     .container{
         max-width: 950px;
+        width: 100%;
+    }
+    .col-12{
         width: 100%;
     }
     .col-8{
@@ -274,22 +341,75 @@ body{
     .image-card{
         width: 300px;
     }
+    .card-testimonial{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .info-testimonial{
+        text-align: start;
+    }
+    .col-6{
+        width: calc(50%);
+    }
+    .card-benefits{
+        margin: 1.5rem;
+    }
+    .about-title{
+        padding: 0 60px;
+    }
+    .about-us-image > img{
+        width: 200px;
+    }
+    .about-us-image > i{
+        left: 140px;
+    }
 }
 /* endregion media query 768px */
 
 /* region media query 992px */
 @media screen and (min-width: 992px){
-    
+     .container{
+        max-width: 1000px;
+        width: 90%;
+     }
+
+
 }
 /* endregion media query 992px */
 
 /* region media query 1200px  */
 @media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+        width: 80%;
+    }
     .siderbar{
         display: block;
     }
     .main-menu{
         display: none;
+    }
+    .left-strategic-planning{
+        padding-right: 50px;
+    }
+    .left-strategic-planning > img{
+        transform: translateY(-240px);
+    }
+    .col-6-lg{
+        width: 50%;
+    }
+    #strategic-planning{
+        padding-top: 340px;
+    }
+    .info-strategic{
+        transform: translateY(100px);
+    }
+    .col-4-lg{
+        width: calc((100% / 12)* 4);
     }
 }
 /* endregion media query 1200px  */
