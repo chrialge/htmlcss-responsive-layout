@@ -94,12 +94,13 @@ body{
 .card-sm{
     padding: 2rem;
 }
-.card > *{
+.card > .col-8-lg> *{
     padding: 20px 0;
 }
 .card > h2{
     color: var(--responsive-layout-primary);
 }
+
 .btn >a{
     padding: 0.5rem 4rem;
     text-decoration: none;
@@ -376,6 +377,10 @@ body{
         max-width: 1000px;
         width: 90%;
      }
+     .container-md{
+        max-width: 1000px;
+        width: 90%;
+     }
 
 
 }
@@ -411,5 +416,15 @@ body{
     .col-4-lg{
         width: calc((100% / 12)* 4);
     }
+    .col-8-lg{
+        width: calc((100% / 12)* 8);
+    }
+    .row-phone{
+        display: flex;
+    }
+    .container-md{
+        max-width: 1000px;
+        width: 80%;
+     }
 }
 /* endregion media query 1200px  */
