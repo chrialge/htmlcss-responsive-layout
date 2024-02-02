@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 /* endregion common */
 
@@ -387,6 +387,9 @@ body{
      }
     .image-card > img {
         margin: -25px;
+    }
+    .img-testimonial > h3{
+        padding-top: 20px;
     }
 }
 /* endregion media query 768px */
